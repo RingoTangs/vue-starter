@@ -8,6 +8,7 @@ import postcssPresetEnv from 'postcss-preset-env'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: './',
   plugins: [
     vue(),
     vueJsx(),
@@ -26,11 +27,6 @@ export default defineConfig({
   css: {
     postcss: {
       plugins: [postcssPresetEnv(), tailwindcss()],
-    },
-  },
-  build: {
-    rollupOptions: {
-      external: ['vue'],
     },
   },
 })
