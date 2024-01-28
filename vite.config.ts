@@ -2,8 +2,8 @@ import { resolve } from 'path'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
-import autoprefixer from 'autoprefixer'
 import tailwindcss from 'tailwindcss'
+import postcssPresetEnv from 'postcss-preset-env'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -15,7 +15,7 @@ export default defineConfig({
   },
   css: {
     postcss: {
-      plugins: [autoprefixer(), tailwindcss()],
+      plugins: [postcssPresetEnv(), tailwindcss()],
     },
   },
 })
