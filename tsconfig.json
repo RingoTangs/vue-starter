@@ -13,6 +13,9 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "preserve",
+    // Vue3.4 JSX 类型推断
+    // https://cn.vuejs.org/guide/extras/render-function.html#jsx-type-inference
+    "jsxImportSource": "vue",
 
     /* Linting */
     "strict": true,
