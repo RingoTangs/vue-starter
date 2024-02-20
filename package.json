@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc && vite build",
+    "build": "rimraf dist && vue-tsc && vite build",
     "preview": "vite preview",
     "format": "prettier --write src/**/*.{vue,ts,tsx,css,scss,less}",
     "lint:eslint": "eslint --max-warnings 0 ./src/**/*.{vue,ts,tsx} ",
