@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "format": "prettier --write src/**/*.{vue,ts,tsx,css,scss,less}",
     "lint:eslint": "eslint --max-warnings 0 ./src/**/*.{vue,ts,tsx} ",
-    "lint": "pnpm format && pnpm lint:eslint"
+    "lint": "pnpm format && pnpm lint:eslint",
+    "prepare": "husky"
   },
   "dependencies": {
     "@vueuse/core": "^10.7.2",
@@ -27,6 +28,8 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.3",
     "eslint-plugin-vue": "^9.20.1",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
     "postcss": "^8.4.33",
     "postcss-preset-env": "^9.3.0",
     "prettier-plugin-tailwindcss": "^0.5.11",
