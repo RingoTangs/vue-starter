@@ -5,6 +5,7 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 import legacy from '@vitejs/plugin-legacy'
 import tailwindcss from 'tailwindcss'
 import postcssPresetEnv from 'postcss-preset-env'
+import ElementPlus from 'unplugin-element-plus/vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -18,6 +19,7 @@ export default defineConfig({
       // https://github.com/vitejs/vite/blob/main/packages/plugin-legacy/src/index.ts#L169
       polyfills: ['stable/index', 'regenerator'],
     }),
+    ElementPlus({}),
   ],
   resolve: {
     alias: {
